@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/Adityakumar2412/Education-Center",
+  "homepage": "https://adityakumar2412.github.io/Education-Center",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
