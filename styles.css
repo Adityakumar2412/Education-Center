@@ -13,13 +13,18 @@ body {
     padding: 20px;
 }
 header {
-    background-color: #5809d8;
-    color: white;
-    padding: 20px 0;
+    background-image: url('https://th.bing.com/th/id/OIP.3Zr1s5ehHsdmTgp_JR754wHaE7?w=3839&h=2558&rs=1&pid=ImgDetMain');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: 0;
+    /* background-color: #5809d8; */
+    color: rgb(255, 255, 255);
+    padding: 20px 0px;
     text-align: center;
 }
 nav {
-    background-color: #34495e;
+    background-color: #37a3ce;
     padding: 10px 0;
 }
 nav ul {
