@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Center - 100+ Free Courses</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Education Center</h1>
+            <p>100+ Free Courses to Enhance Your Skills</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container" style="display: flex; align-items: center;">
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="courses-link">Courses</a></li>
+                <li><a href="#" id="profile-link">Profile</a></li>
+                <li><a href="#" id="about-link">About</a></li>
+                <li><a href="#" id="contact-link">Contact</a></li>
+            </ul>
+            <div class="user-info" id="user-info"></div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Login/Register Forms -->
+        <div class="auth-forms" id="auth-forms">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="login-email" placeholder="Email" required>
+                    <input type="password" id="login-password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <input type="text" id="register-name" placeholder="Full Name" required>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <input type="tel" id="register-phone" placeholder="Mobile Number" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Profile Section -->
+        <div id="profile-section" class="profile-section hidden">
+            <div class="profile-header">
+                <img id="profile-pic-large" src="https://i.imgur.com/8Km9tLL.jpg" class="profile-pic-large" alt="Profile Picture">
+                <div class="profile-details">
+                    <h2 id="profile-name">User Name</h2>
+                    <p id="profile-email">user@example.com</p>
+                    <p id="profile-phone">+91 9876543210</p>
+                </div>
+            </div>
+            
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="edit-name">Full Name</label>
+                    <input type="text" id="edit-name" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-email">Email</label>
+                    <input type="email" id="edit-email" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-phone">Mobile Number</label>
+                    <input type="tel" id="edit-phone" disabled>
+                </div>
+                
+                <div class="form-group">
+                    <label for="edit-photo">Profile Photo</label>
+                    <input type="file" id="edit-photo" accept="image/*" disabled>
+                </div>
+                
+                <div class="profile-actions">
+                    <button type="button" id="edit-profile" class="edit-btn">Edit Profile</button>
+                    <button type="submit" id="save-profile" class="save-btn hidden">Save Changes</button>
+                    <button type="button" id="cancel-edit" class="cancel-btn hidden">Cancel</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- About Section -->
+        <div id="about-section" class="about-section hidden">
+            <h2>About Education Center</h2>
+            <p>Welcome to Education Center, your premier destination for high-quality online education. Founded in 2020, we have been committed to providing accessible and affordable education to learners worldwide.</p>
+            
+            <h3>Our Mission</h3>
+            <p>To empower individuals through education by offering comprehensive, industry-relevant courses that bridge the gap between learning and practical application.</p>
+            
+            <h3>Our Vision</h3>
+            <p>To become a global leader in online education, transforming lives through innovative learning experiences and career-focused programs.</p>
+            
+            <h3>Why Choose Us?</h3>
+            <ul>
+                <li>100+ courses across various domains</li>
+                <li>Expert instructors with industry experience</li>
+                <li>Flexible learning at your own pace</li>
+                <li>Certificates recognized by employers</li>
+                <li>Affordable and often free courses</li>
+            </ul>
+            
+            <h3>Our Team</h3>
+            <p>Under the leadership of Director <strong>Aditya Kumar</strong> and Co-Director <strong>Lekh Raj Soni</strong>, our team of dedicated educators and professionals work tirelessly to deliver exceptional learning experiences.</p>
+        </div>
+        
+        <!-- Courses Section -->
+        <div id="courses-section" class="hidden">
+            <h2>Available Courses (100+)</h2>
+            
+            <div class="category-filter">
+                <button class="category-btn active" data-category="all">All Courses</button>
+                <button class="category-btn" data-category="programming">Programming</button>
+                <button class="category-btn" data-category="marketing">Marketing</button>
+                <button class="category-btn" data-category="design">Design</button>
+                <button class="category-btn" data-category="business">Business</button>
+                <button class="category-btn" data-category="data">Data Science</button>
+            </div>
+            
+            <div class="courses" id="courses-list">
+                <!-- Courses will be dynamically added here -->
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div id="contact-section" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us!</p>
+            <p><strong>Mobile:</strong> 9523340408</p>
+            <p><strong>Email:</strong> adityakumar9523340408@gmail.com</p>
+            <p><strong>Address:</strong> Education Center, jamshedpur , 831001</p>
+            <p><strong>Office Hours:</strong> Monday to Friday, 9:00 AM to 6:00 PM</p>
+        </div>
+        
+        <!-- Quiz Section -->
+        <div class="quiz-container" id="quiz-container">
+            <h2 id="quiz-title">Course Quiz</h2>
+            <div id="quiz-questions">
+                <!-- Questions will be added here -->
+            </div>
+            <button id="submit-quiz">Submit Quiz</button>
+            <div id="quiz-result"></div>
+        </div>
+        
+        <!-- Certificate Section -->
+        <div class="certificate" id="certificate">
+            <div class="certificate-bg"></div>
+            <div class="certificate-content">
+                <h1>CERTIFICATE OF COMPLETION</h1>
+                <p>This is to certify that</p>
+                <h2 id="certificate-name">Student Name</h2>
+                <p>has successfully completed the course</p>
+                <h3 id="certificate-course">Course Title</h3>
+                <p>  with a score of <span id="certificate-score">90</span><span style="color: rgb(5, 241, 5);"><b>%</b></span></p>
+                <p>on <span id="certificate-date">May 25, 2025</span></p>
+                <p>Awarded by <strong>Education Center</strong></p>
+                
+                <div class="signatures">
+                    <div class="signature">
+                        <b><p> Aditya Kumar</p></b>
+                        <p>Director,Education Center</p>
+                    </div>
+                    <div class="signature">
+                        <b><p>Lekh Raj Soni</p></b>
+                        <p>Co-Director, Education center</p>
+                    </div>
+                </div>
+                
+                <!-- <button id="download-certificate" class="download-btn">Download Certificate (PDF)</button> -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Education Center. All rights reserved.</p>
+            <p>Director: Aditya Kumar | Co-Director: Lekh Raj Soni</p>
+        </div>
+    </footer>
+    
+    <!-- html2pdf library for PDF download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
