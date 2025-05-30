@@ -355,7 +355,7 @@ document.getElementById('register-form').addEventListener('submit', (e) => {
         email, 
         password, 
         phone,
-        photo: 'https://i.imgur.com/8Km9tLL.jpg' // Default profile photo
+        photo: 'https://th.bing.com/th/id/OIP.KWzjakxaGOTB9ykDqyeP3AHaE8?rs=1&pid=ImgDetMain' // Default profile photo
     };
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
@@ -528,8 +528,8 @@ function loadProfile() {
     editEmailInput.value = currentUser.email;
     editPhoneInput.value = currentUser.phone;
     
-    profilePicLarge.src = currentUser.photo || 'https://i.imgur.com/8Km9tLL.jpg';
-    navProfilePic.src = currentUser.photo || 'https://i.imgur.com/8Km9tLL.jpg';
+    profilePicLarge.src = currentUser.photo || 'https://th.bing.com/th/id/OIP.KWzjakxaGOTB9ykDqyeP3AHaE8?rs=1&pid=ImgDetMain';
+    navProfilePic.src = currentUser.photo || 'https://th.bing.com/th/id/OIP.KWzjakxaGOTB9ykDqyeP3AHaE8?rs=1&pid=ImgDetMain';
 }
 
 // Edit profile
@@ -639,7 +639,7 @@ profileForm.addEventListener('submit', (e) => {
 function updateUserInfo() {
     if (currentUser) {
         userInfoDiv.innerHTML = '';
-        navProfilePic.src = currentUser.photo || 'https://i.imgur.com/8Km9tLL.jpg';
+        navProfilePic.src = currentUser.photo || 'https://th.bing.com/th/id/OIP.KWzjakxaGOTB9ykDqyeP3AHaE8?rs=1&pid=ImgDetMain';
         userInfoDiv.appendChild(navProfilePic);
         
         const userName = document.createElement('span');
